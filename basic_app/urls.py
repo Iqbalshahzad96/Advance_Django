@@ -8,5 +8,5 @@ urlpatterns = [
     path('schools/<int:pk>/', views.SchoolDetailView.as_view(), name='detail'),
     path('create/', views.schoolCreateView.as_view(), name='create'),
     path('update/<int:pk>/', views.SchoolUpdaateView.as_view(), name='update'),
-
+    path('delete/<int:pk>/', views.SchoolDeleteView.as_view(), name='delete'),
 ]
