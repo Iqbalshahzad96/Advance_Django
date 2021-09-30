@@ -13,3 +13,11 @@ class SchoolDetailView(DetailView):
     context_object_name = 'school_details'
     model = models.School
     template_name = 'basic_app/school_detail.html'
+
+class schoolCreateView(CreateView):
+    fields = ('name', 'principal', 'location')
+    model = models.School
+
+class SchoolUpdaateView(UpdateView):
+    fields = ('name', 'principal')
+    model = models.School
